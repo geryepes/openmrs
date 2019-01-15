@@ -5,14 +5,14 @@ ENVIRONMENT config mapping
 The config file needed when openmrs is running and the DB was initialized is **/usr/local/tomcat/openmrs-runtime.properties** 
 
 Configure these settings sending the following environment varibles to the container
-CON_URL -> connection.url
-CON_USERNAME -> connection.username
-CON_PASSWORD -> connection.password
-AUTO_UPDATE_DATABASE -> auto_update_database
-MODULE_ALLOW_WEB_ADMIN -> module.allow_web_admin
-APPLICATION_DATA_DIRECTORY -> application_data_directory
-ENC_VECTOR -> encryption.vector
-ENC_KEY -> encryption.key
+- CON_URL -> connection.url
+- CON_USERNAME -> connection.username
+- CON_PASSWORD -> connection.password
+- AUTO_UPDATE_DATABASE -> auto_update_database
+- MODULE_ALLOW_WEB_ADMIN -> module.allow_web_admin
+- APPLICATION_DATA_DIRECTORY -> application_data_directory
+- ENC_VECTOR -> encryption.vector
+- ENC_KEY -> encryption.key
 
 ###### Example of usage:
 ```
@@ -28,4 +28,4 @@ docker run -it \
  --link  openmrs-mysql \
  -p8080:8080 \
  geryepes/openmrs:2.8.0
-``
+```
